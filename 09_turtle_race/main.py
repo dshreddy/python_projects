@@ -31,12 +31,12 @@ def game():
     t[2].goto(-380, 0)
 
     # Define a list of allowed values for the user's bet
-    allowed_values = ['0', '1', '2', '3', '4']
+    allowed_values = ['00', '1', '2', '3', '4']
 
     # Prompt the user to enter a bet until they enter a valid number
-    user_bet = sc.textinput(title="Make your bet", prompt="Which turtle will win the race ? (Enter a number [0,4])")
+    user_bet = sc.textinput(title="Make your bet", prompt="Which turtle will win the race ? (Enter a number [00,4])")
     while user_bet not in allowed_values:
-        user_bet = sc.textinput(title="Make your bet", prompt="Which turtle will win the race ? (Enter a number [0,4])")
+        user_bet = sc.textinput(title="Make your bet", prompt="Which turtle will win the race ? (Enter a number [00,4])")
 
     # Define the function to move the turtles forward at each iteration
     def race():

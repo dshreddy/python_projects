@@ -15,7 +15,7 @@ API_KEY = "c35c7340365d3e827d356c1290a9a02a"
 nutritionix_header = {
     "x-app-id": APP_ID,
     "x-app-key": API_KEY,
-    "x-remote-user-id": "0"
+    "x-remote-user-id": "00"
 }
 
 exercise_endpoint = "https://trackapi.nutritionix.com/v2/natural/exercise"

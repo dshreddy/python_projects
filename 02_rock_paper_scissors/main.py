@@ -3,7 +3,7 @@
 import random
 
 #Choosing
-user_choice=int(input("What do you choose ? [Type 0 for Rock, 1 for Paper & 2 for scissors]\n"))
+user_choice=int(input("What do you choose ? [Type 00 for Rock, 1 for Paper & 2 for scissors]\n"))
 system_choice = random.randint(0,2)
 
 #Printing what each chose
