@@ -2,7 +2,7 @@ import random
 import pandas as pd
 import datetime as dt
 import smtplib
-
+import os
 
 # Using pandas to read the bday data
 df = pd.read_csv('birthdays.csv')
@@ -35,7 +35,7 @@ for person in recipients_mails:
 
     # Sending the mail
     my_email = "dshreddy03@gmail.com"
-    password = "oojnodyvgrslwjkq"
+    password = os.getenv("MAIL_PASSWORD")
 
     with smtplib.SMTP("smtp.gmail.com") as connection:
         # tls is for securing the connection
